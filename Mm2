@@ -35,7 +35,7 @@ local Button = MainTab:CreateButton({
 Name = "Bypass Anticheat(Wait 5 min to bypass)",
 Callback = function()
 
-loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Universal/refs/heads/main/AdoptMe'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Dupe/refs/heads/main/Test'))()
 end
 })
 
@@ -45,7 +45,7 @@ Name = "Trade Scam",
 CurrentValue = false,
 Callback = function()
 
-loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Universal/refs/heads/main/AdoptMe'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Dupe/refs/heads/main/Test'))()
 end
 })
 -- Create an Input Box
@@ -55,7 +55,7 @@ PlaceholderText = "Type here...",
 RemoveTextAfterFocusLost = false,
 Callback = function()
 
-loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Universal/refs/heads/main/AdoptMe'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Dupe/refs/heads/main/Test'))()
 end
 })
 
