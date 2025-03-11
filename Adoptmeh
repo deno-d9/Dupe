@@ -21,7 +21,7 @@ local Window = Rayfield:CreateWindow({
         Subtitle = "Enter your key below",
         Note = "Find the key in our Discord",
         FileName = "KeyData",
-        SaveKey = true,
+        SaveKey = false,
         GrabKeyFromSite = false,
         Key = {"DHubOnTop"}
     }
