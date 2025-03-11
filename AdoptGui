@@ -11,7 +11,7 @@ FolderName = "MyScriptData", -- Save settings in this folder
 FileName = "UserSettings"
 },
 Discord = {
-Enabled = true, -- Set to true if you want Discord integration
+Enabled = false, -- Set to true if you want Discord integration
 Invite = "https://discord.gg/AuDgVbRa4S", -- Your Discord invite link
 RememberJoins = true
 },
