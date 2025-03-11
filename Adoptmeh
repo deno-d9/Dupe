@@ -15,7 +15,7 @@ local Window = Rayfield:CreateWindow({
         Invite = "YourDiscordInvite", -- Your Discord invite link
         RememberJoins = true
     },
-    KeySystem = true, -- Set to true if you want a key system
+    KeySystem = false, -- Set to true if you want a key system
     KeySettings = {
         Title = "Script Key System",
         Subtitle = "Enter your key below",
