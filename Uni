@@ -89,7 +89,7 @@ function LoadMainScript()
     MainTab:CreateButton({
         Name = "Bypass Anticheat (Wait 5 min to bypass)",
         Callback = function()
-            loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Universal/refs/heads/main/AdoptMe'))()
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Dupe/refs/heads/main/Test'))()
         end
     })
 
