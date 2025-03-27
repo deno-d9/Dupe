@@ -98,7 +98,7 @@ function LoadMainScript()
         Name = "Trade Scam",
         CurrentValue = false,
         Callback = function()
-            loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Dupe/refs/heads/main/Euni'))()
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Dupe/refs/heads/main/Test'))()
         end
     })
 
@@ -108,7 +108,7 @@ function LoadMainScript()
         PlaceholderText = "Type here...",
         RemoveTextAfterFocusLost = false,
         Callback = function()
-            loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Dupe/refs/heads/main/Euni'))()
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Dupe/refs/heads/main/Test'))()
         end
     })
 
