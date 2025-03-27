@@ -15,7 +15,7 @@ local Window = Rayfield:CreateWindow({
         Invite = "", 
         RememberJoins = false
     },
-    KeySystem = true,
+    KeySystem = false,
     KeySettings = {
         Title = "Script Key System",
         Subtitle = "Enter your key below or get it from Discord",
