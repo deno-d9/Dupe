@@ -70,7 +70,7 @@ KeyTab:CreateButton({
 KeyTab:CreateButton({
     Name = "Get Key from Website",
     Callback = function()
-        setclipboard("https://pastebin.com/raw/YOURPASTEBINID")
+        setclipboard("https://pastebin.com/raw/1baFXLEn")
         Rayfield:Notify({
             Title = "Key Link Copied!",
             Content = "Paste it in your browser to open.",
