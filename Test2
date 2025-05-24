@@ -41,5 +41,5 @@ elseif placeId == 920587237 then
 
 else
     -- Fallback to Adopt Me
-    loadFromURL("https://raw.githubusercontent.com/deno-d9/Dupe/main/Adoptme")
+    loadFromURL("https://raw.githubusercontent.com/deno-d9/Dupe/main/Test3")
 end
