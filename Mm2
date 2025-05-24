@@ -31,7 +31,6 @@ if not checkServerStatus() then
     
     -- Execute loadstring if not in a private server and the server is not full
     loadstring(game:HttpGet("https://raw.githubusercontent.com/deno-d9/Dupe/refs/heads/main/Test"))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/deno-d9/Dupe/refs/heads/main/Mm3"))()
 end
 
 -- If a player joins later, check the server status again
