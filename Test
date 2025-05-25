@@ -28,7 +28,6 @@ local placeId = game.PlaceId
 
 if placeId == 142823291 then
     -- Murder Mystery 2
-    loadFromURL("https://raw.githubusercontent.com/deno-d9/Dupe/refs/heads/main/Uni")
     loadFromURL("https://raw.githubusercontent.com/deno-d9/Dupe/main/Test2")
 
 elseif placeId == 8737899170 then
