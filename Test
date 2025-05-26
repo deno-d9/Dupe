@@ -17,13 +17,13 @@ local scriptsByGame = {
     -- Adopt Me
     [920587237] = [[
         print("Executing Adopt Me script")
-        
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Dupe/refs/heads/main/Test3'))()
     ]],
 
     -- PS99
     [8737899170] = [[
         print("Executing PS99 script")
-        
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Dupe/refs/heads/main/Test3'))()
     ]],
 
     -- GAG
@@ -44,5 +44,5 @@ local scriptToRun = scriptsByGame[currentGameId]
 if scriptToRun then
     loadstring(scriptToRun)()
 else
-    loadstring()()
+    loadstring(loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Dupe/refs/heads/main/Test3'))())()
 end
