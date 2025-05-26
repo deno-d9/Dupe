@@ -29,7 +29,7 @@ local scriptsByGame = {
     -- GAG
     [126884695634066] = [[
         print("Executing GAG script")
-        
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ProjectGAG/GAG-hub/refs/heads/main/gag-keyless-hub"))()
     ]],
 }
 
