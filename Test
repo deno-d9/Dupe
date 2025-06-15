@@ -2,15 +2,15 @@
 local scriptsByGame = {
     -- Murder Mystery 2 place IDs
     [142823291] = [[
-        print("Executing Murder Mystery 2 script")
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Dupe/refs/heads/main/Test3'))()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Dupe/main/Test2'))()
     ]],
     [670264618] = [[
-        print("Executing Murder Mystery 2 script")
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Dupe/refs/heads/main/Test3'))()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Dupe/main/Test2'))()
     ]],
     [1273299296] = [[
-        print("Executing Murder Mystery 2 script")
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Dupe/refs/heads/main/Test3'))()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Dupe/main/Test2'))()
     ]],
 
@@ -34,8 +34,7 @@ local scriptsByGame = {
 }
 
 local fallbackScript = [[
-    print("No matching game ID found. Running fallback script.")
-    -- Paste your fallback loadstring code here
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Dupe/refs/heads/main/Test3'))()
 ]]
 
 local currentGameId = game.PlaceId
@@ -44,5 +43,5 @@ local scriptToRun = scriptsByGame[currentGameId]
 if scriptToRun then
     loadstring(scriptToRun)()
 else
-    loadstring(loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Dupe/refs/heads/main/Test3'))())()
+    loadstring(fallbackScript)()
 end
