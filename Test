@@ -2,22 +2,19 @@
 local scriptsByGame = {
     -- Murder Mystery 2 place IDs
     [142823291] = [[
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Dupe/refs/heads/main/Test3'))()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Dupe/main/Test2'))()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Dupe/refs/heads/main/tm'))()
     ]],
     [670264618] = [[
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Dupe/refs/heads/main/Test3'))()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Dupe/main/Test2'))()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Dupe/refs/heads/main/tm'))()
     ]],
     [1273299296] = [[
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Dupe/refs/heads/main/Test3'))()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Dupe/main/Test2'))()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Dupe/refs/heads/main/tm'))()
     ]],
 
     -- Adopt Me
     [920587237] = [[
         print("Executing Adopt Me script")
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Dupe/refs/heads/main/Test3'))()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/deno-d9/Dupe/refs/heads/main/adm'))()
     ]],
 
     -- PS99
